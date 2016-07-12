@@ -2,6 +2,9 @@
 
 method is post
 
+database Minium must like this
+table user (password,key) //user table must require 'user_id' and 'key' Fild. Other table dosent matters.
+
 #1.type = login
 
 var string type = login;
