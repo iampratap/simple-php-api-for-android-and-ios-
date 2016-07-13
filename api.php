@@ -85,8 +85,8 @@ if (isset($_POST['sql'])) {
     if (empty($key)) {
         die(json_encode($json = array('error' => 1, 'result' => 'Key Empty')));
     } else {
-        $query = "SELECT * FROM `user` WHERE `key` LIKE '$key'";
-        $key_result = mysql_query($query);
+        $query_key = "SELECT * FROM `user` WHERE `key` LIKE '$key'";
+        $key_result = mysql_query($query_key);
         if (mysql_num_rows($key_result)) {
             if ($_POST['type'] == 'GET') {
                 if ($rows = mysql_query($query)) {
